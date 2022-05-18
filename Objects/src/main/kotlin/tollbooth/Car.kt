@@ -1,0 +1,4 @@
+package tollbooth
+
+class Car {
+}
