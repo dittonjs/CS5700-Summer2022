@@ -1,0 +1,56 @@
+"e","package operationStrategiesclass MinusOperationStrategy: _root_ide_package_.operationStrategies.MathOperationStrategy {
+    override fun performOperation(leftOperand: Double, rightOperand: Double): Double {
+        return leftOperand - rightOperand
+    }
+
+}","","0","1652838473444","MinusOperationStrategy.kt","1.1.3 for 2021-2022 @t1",
+"e","","_root_ide_package_.operationStrategies","57","1652838473457","MinusOperationStrategy.kt","1.1.3 for 2021-2022 @t1",
+"e","",".","57","1652838473458","MinusOperationStrategy.kt","1.1.3 for 2021-2022 @t1",
+"e","package operationStrategiesclass PlusOperationStrategy: _root_ide_package_.operationStrategies.MathOperationStrategy {
+    override fun performOperation(leftOperand: Double, rightOperand: Double): Double {
+        return leftOperand + rightOperand
+    }
+}","","0","1652838473459","PlusOperationStrategy.kt","1.1.3 for 2021-2022 @t1",
+"e","","_root_ide_package_.operationStrategies","56","1652838473463","PlusOperationStrategy.kt","1.1.3 for 2021-2022 @t1",
+"e","",".","56","1652838473464","PlusOperationStrategy.kt","1.1.3 for 2021-2022 @t1",
+"e","package operationStrategiesclass MultiplyOperationStrategy: _root_ide_package_.operationStrategies.MathOperationStrategy {
+    override fun performOperation(leftOperand: Double, rightOperand: Double): Double {
+        return leftOperand * rightOperand
+    }
+}","","0","1652838473466","MultiplyOperationStrategy.kt","1.1.3 for 2021-2022 @t1",
+"e","","_root_ide_package_.operationStrategies","60","1652838473470","MultiplyOperationStrategy.kt","1.1.3 for 2021-2022 @t1",
+"e","",".","60","1652838473471","MultiplyOperationStrategy.kt","1.1.3 for 2021-2022 @t1",
+"e","package operationStrategiesclass ModOperationStrategy: _root_ide_package_.operationStrategies.MathOperationStrategy {
+    override fun performOperation(leftOperand: Double, rightOperand: Double): Double {
+        return leftOperand % rightOperand
+    }
+}","","0","1652838473472","ModOperationStrategy.kt","1.1.3 for 2021-2022 @t1",
+"e","","_root_ide_package_.operationStrategies","55","1652838473477","ModOperationStrategy.kt","1.1.3 for 2021-2022 @t1",
+"e","",".","55","1652838473478","ModOperationStrategy.kt","1.1.3 for 2021-2022 @t1",
+"e","package operationStrategiesclass DivideOperationStrategy: _root_ide_package_.operationStrategies.MathOperationStrategy {
+    override fun performOperation(leftOperand: Double, rightOperand: Double): Double {
+        return leftOperand / rightOperand
+    }
+}","","0","1652838473479","DivideOperationStrategy.kt","1.1.3 for 2021-2022 @t1",
+"e","","_root_ide_package_.operationStrategies","58","1652838473484","DivideOperationStrategy.kt","1.1.3 for 2021-2022 @t1",
+"e","",".","58","1652838473484","DivideOperationStrategy.kt","1.1.3 for 2021-2022 @t1",
+"e","
+
+","","27","1652838473487","MultiplyOperationStrategy.kt","1.1.3 for 2021-2022 @t1",
+"e","
+
+","","27","1652838473489","PlusOperationStrategy.kt","1.1.3 for 2021-2022 @t1",
+"e","
+
+","","27","1652838473491","MinusOperationStrategy.kt","1.1.3 for 2021-2022 @t1",
+"e","package operationStrategies
+
+interface MathOperationStrategy {
+    fun performOperation(leftOperand: Double, rightOperand: Double): Double
+}","","0","1652838473493","MathOperationStrategy.kt","1.1.3 for 2021-2022 @t1",
+"e","
+
+","","27","1652838473495","ModOperationStrategy.kt","1.1.3 for 2021-2022 @t1",
+"e","
+
+","","27","1652838473497","DivideOperationStrategy.kt","1.1.3 for 2021-2022 @t1",
