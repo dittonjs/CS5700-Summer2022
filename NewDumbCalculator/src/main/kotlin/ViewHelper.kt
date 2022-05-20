@@ -4,7 +4,19 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import operationStrategies.*
 
+class User(val age: Int)
+
 class ViewHelper {
+    val users = mutableListOf<User>()
+    init {
+        users.add(User(10))
+        users.add(User(30))
+        users.add(User(50))
+        users.add(User(19))
+        users.add(User(18))
+        users.add(User(13))
+        users.add(User(33))
+    }
     var result by mutableStateOf(0.0)
 
     var userInput by mutableStateOf("")
@@ -16,8 +28,12 @@ class ViewHelper {
         Pair("mod", ModOperationStrategy()),
     )
 
-    private fun getStrategy(operation: String) {
+    private val adults get() = users.filter { it.age >= 13 }
 
+    fun displayAdsToUsers() {
+        adults.forEach {
+            // display ads
+        }
     }
     // plus 2
     // divide 3
