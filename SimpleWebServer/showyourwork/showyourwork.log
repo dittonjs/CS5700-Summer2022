@@ -1,0 +1,54 @@
+"a","Outside edit","","","1653610699543","Business.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1653610699543","Citizen.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1653610699544","Taxable.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1653610699544","View.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1653610699544","ContainerView.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1653610699544",".gitignore","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1653610699544","Main.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1653610699544","Cache.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1653610699544",".gitignore","1.1.3 for 2021-2022 @t1",
+"a","ShowYourWork Init","","","000","ShowYourWork Init","1.1.3 for 2021-2022 @t1",
+"e","import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
+plugins {
+    kotlin(""jvm"") version ""1.5.10""
+    application
+}
+
+group = ""me.josephditton""
+version = ""1.0""
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation(kotlin(""test""))
+    
+}
+
+tasks.test {
+    useJUnitPlatform()
+}
+
+tasks.withType<KotlinCompile> {
+    kotlinOptions.jvmTarget = ""1.8""
+}
+
+application {
+    mainClass.set(""MainKt"")
+}","","0","1653610788009","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"p","implementation(""io.ktor:ktor-server-core-jvm:2.0.1"")
+implementation(""io.ktor:ktor-server-netty-jvm:2.0.1"")
+implementation(""io.ktor:ktor-server-status-pages-jvm:2.0.1"")
+implementation(""io.ktor:ktor-server-default-headers-jvm:2.0.1"")",,"258","1653610788137","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"e","implementation(""io.ktor:ktor-server-core-jvm:2.0.1"")
+implementation(""io.ktor:ktor-server-netty-jvm:2.0.1"")
+implementation(""io.ktor:ktor-server-status-pages-jvm:2.0.1"")
+implementation(""io.ktor:ktor-server-default-headers-jvm:2.0.1"")","","258","1653610788137","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"e","    ","","311","1653610788146","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"e","    ","","369","1653610788147","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"e","    ","","434","1653610788147","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"e","class WebServer {
+}","","0","1653611605561","WebServer.kt","1.1.3 for 2021-2022 @t1",
+"e","package src","","0","1653611620746","WebServer.kt","1.1.3 for 2021-2022 @t1",

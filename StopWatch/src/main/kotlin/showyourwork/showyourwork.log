@@ -6017,3 +6017,1207 @@ fun App() {
 "e","","b","1976","1653009586931","Main.kt","1.1.3 for 2021-2022 @t1",
 "e","=","","1976","1653009588629","Main.kt","1.1.3 for 2021-2022 @t1",
 "k","=",,"1977","1653009588630","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","// Copyright 2000-2021 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file.
+import androidx.compose.material.MaterialTheme
+import andr
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+idx.compose.desktop.ui.tooling.preview.Previe
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
+view.Preview
+import androfoundation.layout.Ro
+import androidx.compose.mmaterial
+import androidx.compose.material.icons.filled.Edit
+import androidx.compose.material.icons.filled.Home
+Button
+import androidx.compose.material.IconButton
+impo
+import androidx.compose.material.icons.filled.ThumbUp
+import androidx.compose.runtime.*
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.sp
+import androidx.compose.ui.window.Window
+import androidx.compose.ui.window.application
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
+
+@Composable
+fun StopWatchView(viewHelper: ViewHelper, coroutineScope: CoroutineScope) {
+
+    Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.Center) {
+        Text(""${viewHelper.numSecondsPassed}"", fontSize = 100.sp)
+    }
+    Row (modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceAround) {
+        IconButton(onClick = {
+            coroutineScope.launch {
+                viewHelper.start()
+            }
+        }) {
+            Icon(Icons.Default.PlayArrow, ""Play"")
+        }
+        IconButton(onClick = {
+            viewHelper.stop()
+        }) {
+            Icon(Icons.Filled.ThumbUp, ""Stahp"")
+        }
+        IconButton(onClick = {
+            viewHelper.reset()
+        }) {
+            Icon(Icons.Filled.Home, ""Reset"")
+        }
+    }
+}
+
+@Composable
+@Preview
+fun App() {
+    val viewHelpers = remember { mutableStateListOf<ViewHelper>()}
+    MaterialTheme {
+        val coroutineScope = rememberCoroutineScope()
+        Column {
+            Row {
+                IconButton(onClEdit, ""
+                    viewHelpers.add(ViewHelper())
+                Create new stopwatch) {
+                    $, ""Playreate new stopwatch"")
+                }
+            }
+            LazyColumn {
+                items(viewHelpers) { viewHelper ->
+                    StopWatchView(viewHelper, coroutineScope)
+                }
+            }
+        }
+    $}
+}
+
+fun main() =application {
+    Window(onCloseRequest = ::exitApplication) {
+        App()
+    }
+}
+
+ENSE file.
+import androidx.compose.material.MaterialTheme
+import androidx.compose.desktop.ui.tooling.preview.Preview
+import androidx.compose.material.Button
+import androidx.compose.material.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.window.Window
+import androidx.compose.ui.window.application
+
+@Composable
+@Preview
+fun App() {
+    var text by remember { mutableStateOf(""Hello, World!"") }
+
+    MaterialTheme {
+        Button(onClick = {
+            text = ""Hello, Desktop!""
+        }) {
+            Text(text)
+        }
+    }
+}
+
+fun main() = application {
+    Window(onCloseRequest = ::exitApplication) {
+        App()
+    }
+}
+ENSE file.
+import androidx.compose.material.MaterialTheme
+import androidx.compose.desktop.ui.tooling.preview.Preview
+import androidx.compose.material.Button
+import androidx.compose.material.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.window.Window
+import androidx.compose.ui.window.application
+
+@Composable
+@Preview
+fun App() {
+    var text by remember { mutableStateOf(""Hello, World!"") }
+
+    MaterialTheme {
+        Button(onClick = {
+            text = ""Hello, Desktop!""
+        }) {
+            Text(text)
+        }
+    }
+}
+
+fun main() = application {
+    Window(onCloseRequest = ::exitApplication) {
+        App()
+    }
+}
+","0","1653443748023","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","// Copyright 2000-2021 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file.
+import androidx.compose.desktop.ui.tooling.preview.Preview
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
+import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Edit
+import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.PlayArrow
+import androidx.compose.material.icons.filled.ThumbUp
+import androidx.compose.runtime.*
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.sp
+import androidx.compose.ui.window.Window
+import androidx.compose.ui.window.application
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
+
+@Composable
+fun StopWatchView(viewHelper: ViewHelper, coroutineScope: CoroutineScope) {
+
+    Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.Center) {
+        Text(""${viewHelper.numSecondsPassed}"", fontSize = 100.sp)
+    }
+    Row (modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceAround) {
+        IconButton(onClick = {
+            coroutineScope.launch {
+                viewHelper.start()
+            }
+        }) {
+            Icon(Icons.Default.PlayArrow, ""Play"")
+        }
+        IconButton(onClick = {
+            viewHelper.stop()
+        }) {
+            Icon(Icons.Filled.ThumbUp, ""Stahp"")
+        }
+        IconButton(onClick = {
+            viewHelper.reset()
+        }) {
+            Icon(Icons.Filled.Home, ""Reset"")
+        }
+    }
+}
+
+@Composable
+@Preview
+fun App() {
+    val viewHelpers = remember { mutableStateListOf<ViewHelper>()}
+    MaterialTheme {
+        val coroutineScope = rememberCoroutineScope()
+        Column {
+            Row {
+                IconButton(onClick = {
+                    viewHelpers.add(ViewHelper())
+                }) {
+                    Icon(Icons.Default.Edit, ""Create new stopwatch"")
+                }
+            }
+            LazyColumn {
+                items(viewHelpers) { viewHelper ->
+                    StopWatchView(viewHelper, coroutineScope)
+                }
+            }
+        }
+    }
+}
+
+fun main() = application {
+    Window(onCloseRequest = ::exitApplication) {
+        App()
+    }
+}
+
+","","0","1653443748023","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","// Copyright 2000-2021 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file.
+import androidx.compose.material.MaterialTheme
+import andr
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+idx.compose.desktop.ui.tooling.preview.Previe
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
+view.Preview
+import androfoundation.layout.Ro
+import androidx.compose.mmaterial
+import androidx.compose.material.icons.filled.Edit
+import androidx.compose.material.icons.filled.Home
+Button
+import androidx.compose.material.IconButton
+impo
+import androidx.compose.material.icons.filled.ThumbUp
+import androidx.compose.runtime.*
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.sp
+import androidx.compose.ui.window.Window
+import androidx.compose.ui.window.application
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
+
+@Composable
+fun StopWatchView(viewHelper: ViewHelper, coroutineScope: CoroutineScope) {
+
+    Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.Center) {
+        Text(""${viewHelper.numSecondsPassed}"", fontSize = 100.sp)
+    }
+    Row (modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceAround) {
+        IconButton(onClick = {
+            coroutineScope.launch {
+                viewHelper.start()
+            }
+        }) {
+            Icon(Icons.Default.PlayArrow, ""Play"")
+        }
+        IconButton(onClick = {
+            viewHelper.stop()
+        }) {
+            Icon(Icons.Filled.ThumbUp, ""Stahp"")
+        }
+        IconButton(onClick = {
+            viewHelper.reset()
+        }) {
+            Icon(Icons.Filled.Home, ""Reset"")
+        }
+    }
+}
+
+@Composable
+@Preview
+fun App() {
+    val viewHelpers = remember { mutableStateListOf<ViewHelper>()}
+    MaterialTheme {
+        val coroutineScope = rememberCoroutineScope()
+        Column {
+            Row {
+                IconButton(onClEdit, ""
+                    viewHelpers.add(ViewHelper())
+                Create new stopwatch) {
+                    $, ""Playreate new stopwatch"")
+                }
+            }
+            LazyColumn {
+                items(viewHelpers) { viewHelper ->
+                    StopWatchView(viewHelper, coroutineScope)
+                }
+            }
+        }
+    $}
+}
+
+fun main() =application {
+    Window(onCloseRequest = ::exitApplication) {
+        App()
+    }
+}
+
+ENSE file.
+import androidx.compose.material.MaterialTheme
+import androidx.compose.desktop.ui.tooling.preview.Preview
+import androidx.compose.material.Button
+import androidx.compose.material.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.window.Window
+import androidx.compose.ui.window.application
+
+@Composable
+@Preview
+fun App() {
+    var text by remember { mutableStateOf(""Hello, World!"") }
+
+    MaterialTheme {
+        Button(onClick = {
+            text = ""Hello, Desktop!""
+        }) {
+            Text(text)
+        }
+    }
+}
+
+fun main() = application {
+    Window(onCloseRequest = ::exitApplication) {
+        App()
+    }
+}
+ENSE file.
+import androidx.compose.material.MaterialTheme
+import androidx.compose.desktop.ui.tooling.preview.Preview
+import androidx.compose.material.Button
+import androidx.compose.material.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.window.Window
+import androidx.compose.ui.window.application
+
+@Composable
+@Preview
+fun App() {
+    var text by remember { mutableStateOf(""Hello, World!"") }
+
+    MaterialTheme {
+        Button(onClick = {
+            text = ""Hello, Desktop!""
+        }) {
+            Text(text)
+        }
+    }
+}
+
+fun main() = application {
+    Window(onCloseRequest = ::exitApplication) {
+        App()
+    }
+}
+","0","1653443748038","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","// Copyright 2000-2021 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file.
+import androidx.compose.desktop.ui.tooling.preview.Preview
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
+import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Edit
+import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.PlayArrow
+import androidx.compose.material.icons.filled.ThumbUp
+import androidx.compose.runtime.*
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.sp
+import androidx.compose.ui.window.Window
+import androidx.compose.ui.window.application
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
+
+@Composable
+fun StopWatchView(viewHelper: ViewHelper, coroutineScope: CoroutineScope) {
+
+    Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.Center) {
+        Text(""${viewHelper.numSecondsPassed}"", fontSize = 100.sp)
+    }
+    Row (modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceAround) {
+        IconButton(onClick = {
+            coroutineScope.launch {
+                viewHelper.start()
+            }
+        }) {
+            Icon(Icons.Default.PlayArrow, ""Play"")
+        }
+        IconButton(onClick = {
+            viewHelper.stop()
+        }) {
+            Icon(Icons.Filled.ThumbUp, ""Stahp"")
+        }
+        IconButton(onClick = {
+            viewHelper.reset()
+        }) {
+            Icon(Icons.Filled.Home, ""Reset"")
+        }
+    }
+}
+
+@Composable
+@Preview
+fun App() {
+    val viewHelpers = remember { mutableStateListOf<ViewHelper>()}
+    MaterialTheme {
+        val coroutineScope = rememberCoroutineScope()
+        Column {
+            Row {
+                IconButton(onClick = {
+                    viewHelpers.add(ViewHelper())
+                }) {
+                    Icon(Icons.Default.Edit, ""Create new stopwatch"")
+                }
+            }
+            LazyColumn {
+                items(viewHelpers) { viewHelper ->
+                    StopWatchView(viewHelper, coroutineScope)
+                }
+            }
+        }
+    }
+}
+
+fun main() = application {
+    Window(onCloseRequest = ::exitApplication) {
+        App()
+    }
+}
+
+","","0","1653443748038","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
+
+class ViewHelp$e:rObserver  {
+    vrl numSecondsPassedby= mutableStateOf()
+    val stopWatch = StopWatch()
+    init {
+        stopWatch.addObserver(this)
+    }
+    
+override fun notify(numSecondsPassed: Int) {
+
+        this.numSecondsPassed = numSecondsPassed
+    }
+
+    suspend fun start() {
+        stopWatch.start()   $ }
+
+    un stop() {}
+        stopWatch.stop()
+    
+ 
+    fun reset() {
+        stopWatch.reset()
+    }
+
+
+}","0","1653443748046","ViewHelper.kt","1.1.3 for 2021-2022 @t1",
+"e","import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
+
+class ViewHelper: Observer {
+    var numSecondsPassed by mutableStateOf(0)
+    val stopWatch = StopWatch()
+    init {
+        stopWatch.addObserver(this)
+    }
+
+    override fun notify(numSecondsPassed: Int) {
+
+        this.numSecondsPassed = numSecondsPassed
+    }
+
+    suspend fun start() {
+        stopWatch.start()
+    }
+
+    fun stop() {
+        stopWatch.stop()
+    }
+
+    fun reset() {
+        stopWatch.reset()
+    }
+
+
+}","","0","1653443748046","ViewHelper.kt","1.1.3 for 2021-2022 @t1",
+"e","","// Copyright 2000-2021 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file.
+import androidx.compose.material.MaterialTheme
+import andr
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+idx.compose.desktop.ui.tooling.preview.Previe
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
+view.Preview
+import androfoundation.layout.Ro
+import androidx.compose.mmaterial
+import androidx.compose.material.icons.filled.Edit
+import androidx.compose.material.icons.filled.Home
+Button
+import androidx.compose.material.IconButton
+impo
+import androidx.compose.material.icons.filled.ThumbUp
+import androidx.compose.runtime.*
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.sp
+import androidx.compose.ui.window.Window
+import androidx.compose.ui.window.application
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
+
+@Composable
+fun StopWatchView(viewHelper: ViewHelper, coroutineScope: CoroutineScope) {
+
+    Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.Center) {
+        Text(""${viewHelper.numSecondsPassed}"", fontSize = 100.sp)
+    }
+    Row (modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceAround) {
+        IconButton(onClick = {
+            coroutineScope.launch {
+                viewHelper.start()
+            }
+        }) {
+            Icon(Icons.Default.PlayArrow, ""Play"")
+        }
+        IconButton(onClick = {
+            viewHelper.stop()
+        }) {
+            Icon(Icons.Filled.ThumbUp, ""Stahp"")
+        }
+        IconButton(onClick = {
+            viewHelper.reset()
+        }) {
+            Icon(Icons.Filled.Home, ""Reset"")
+        }
+    }
+}
+
+@Composable
+@Preview
+fun App() {
+    val viewHelpers = remember { mutableStateListOf<ViewHelper>()}
+    MaterialTheme {
+        val coroutineScope = rememberCoroutineScope()
+        Column {
+            Row {
+                IconButton(onClEdit, ""
+                    viewHelpers.add(ViewHelper())
+                Create new stopwatch) {
+                    $, ""Playreate new stopwatch"")
+                }
+            }
+            LazyColumn {
+                items(viewHelpers) { viewHelper ->
+                    StopWatchView(viewHelper, coroutineScope)
+                }
+            }
+        }
+    $}
+}
+
+fun main() =application {
+    Window(onCloseRequest = ::exitApplication) {
+        App()
+    }
+}
+
+ENSE file.
+import androidx.compose.material.MaterialTheme
+import androidx.compose.desktop.ui.tooling.preview.Preview
+import androidx.compose.material.Button
+import androidx.compose.material.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.window.Window
+import androidx.compose.ui.window.application
+
+@Composable
+@Preview
+fun App() {
+    var text by remember { mutableStateOf(""Hello, World!"") }
+
+    MaterialTheme {
+        Button(onClick = {
+            text = ""Hello, Desktop!""
+        }) {
+            Text(text)
+        }
+    }
+}
+
+fun main() = application {
+    Window(onCloseRequest = ::exitApplication) {
+        App()
+    }
+}
+ENSE file.
+import androidx.compose.material.MaterialTheme
+import androidx.compose.desktop.ui.tooling.preview.Preview
+import androidx.compose.material.Button
+import androidx.compose.material.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.window.Window
+import androidx.compose.ui.window.application
+
+@Composable
+@Preview
+fun App() {
+    var text by remember { mutableStateOf(""Hello, World!"") }
+
+    MaterialTheme {
+        Button(onClick = {
+            text = ""Hello, Desktop!""
+        }) {
+            Text(text)
+        }
+    }
+}
+
+fun main() = application {
+    Window(onCloseRequest = ::exitApplication) {
+        App()
+    }
+}
+","0","1653443748101","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","// Copyright 2000-2021 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file.
+import androidx.compose.desktop.ui.tooling.preview.Preview
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
+import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Edit
+import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.PlayArrow
+import androidx.compose.material.icons.filled.ThumbUp
+import androidx.compose.runtime.*
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.sp
+import androidx.compose.ui.window.Window
+import androidx.compose.ui.window.application
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
+
+@Composable
+fun StopWatchView(viewHelper: ViewHelper, coroutineScope: CoroutineScope) {
+
+    Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.Center) {
+        Text(""${viewHelper.numSecondsPassed}"", fontSize = 100.sp)
+    }
+    Row (modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceAround) {
+        IconButton(onClick = {
+            coroutineScope.launch {
+                viewHelper.start()
+            }
+        }) {
+            Icon(Icons.Default.PlayArrow, ""Play"")
+        }
+        IconButton(onClick = {
+            viewHelper.stop()
+        }) {
+            Icon(Icons.Filled.ThumbUp, ""Stahp"")
+        }
+        IconButton(onClick = {
+            viewHelper.reset()
+        }) {
+            Icon(Icons.Filled.Home, ""Reset"")
+        }
+    }
+}
+
+@Composable
+@Preview
+fun App() {
+    val viewHelpers = remember { mutableStateListOf<ViewHelper>()}
+    MaterialTheme {
+        val coroutineScope = rememberCoroutineScope()
+        Column {
+            Row {
+                IconButton(onClick = {
+                    viewHelpers.add(ViewHelper())
+                }) {
+                    Icon(Icons.Default.Edit, ""Create new stopwatch"")
+                }
+            }
+            LazyColumn {
+                items(viewHelpers) { viewHelper ->
+                    StopWatchView(viewHelper, coroutineScope)
+                }
+            }
+        }
+    }
+}
+
+fun main() = application {
+    Window(onCloseRequest = ::exitApplication) {
+        App()
+    }
+}
+
+","","0","1653443748101","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","// Copyright 2000-2021 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file.
+import androidx.compose.material.MaterialTheme
+import andr
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+idx.compose.desktop.ui.tooling.preview.Previe
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
+view.Preview
+import androfoundation.layout.Ro
+import androidx.compose.mmaterial
+import androidx.compose.material.icons.filled.Edit
+import androidx.compose.material.icons.filled.Home
+Button
+import androidx.compose.material.IconButton
+impo
+import androidx.compose.material.icons.filled.ThumbUp
+import androidx.compose.runtime.*
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.sp
+import androidx.compose.ui.window.Window
+import androidx.compose.ui.window.application
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
+
+@Composable
+fun StopWatchView(viewHelper: ViewHelper, coroutineScope: CoroutineScope) {
+
+    Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.Center) {
+        Text(""${viewHelper.numSecondsPassed}"", fontSize = 100.sp)
+    }
+    Row (modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceAround) {
+        IconButton(onClick = {
+            coroutineScope.launch {
+                viewHelper.start()
+            }
+        }) {
+            Icon(Icons.Default.PlayArrow, ""Play"")
+        }
+        IconButton(onClick = {
+            viewHelper.stop()
+        }) {
+            Icon(Icons.Filled.ThumbUp, ""Stahp"")
+        }
+        IconButton(onClick = {
+            viewHelper.reset()
+        }) {
+            Icon(Icons.Filled.Home, ""Reset"")
+        }
+    }
+}
+
+@Composable
+@Preview
+fun App() {
+    val viewHelpers = remember { mutableStateListOf<ViewHelper>()}
+    MaterialTheme {
+        val coroutineScope = rememberCoroutineScope()
+        Column {
+            Row {
+                IconButton(onClEdit, ""
+                    viewHelpers.add(ViewHelper())
+                Create new stopwatch) {
+                    $, ""Playreate new stopwatch"")
+                }
+            }
+            LazyColumn {
+                items(viewHelpers) { viewHelper ->
+                    StopWatchView(viewHelper, coroutineScope)
+                }
+            }
+        }
+    $}
+}
+
+fun main() =application {
+    Window(onCloseRequest = ::exitApplication) {
+        App()
+    }
+}
+
+ENSE file.
+import androidx.compose.material.MaterialTheme
+import androidx.compose.desktop.ui.tooling.preview.Preview
+import androidx.compose.material.Button
+import androidx.compose.material.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.window.Window
+import androidx.compose.ui.window.application
+
+@Composable
+@Preview
+fun App() {
+    var text by remember { mutableStateOf(""Hello, World!"") }
+
+    MaterialTheme {
+        Button(onClick = {
+            text = ""Hello, Desktop!""
+        }) {
+            Text(text)
+        }
+    }
+}
+
+fun main() = application {
+    Window(onCloseRequest = ::exitApplication) {
+        App()
+    }
+}
+ENSE file.
+import androidx.compose.material.MaterialTheme
+import androidx.compose.desktop.ui.tooling.preview.Preview
+import androidx.compose.material.Button
+import androidx.compose.material.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.window.Window
+import androidx.compose.ui.window.application
+
+@Composable
+@Preview
+fun App() {
+    var text by remember { mutableStateOf(""Hello, World!"") }
+
+    MaterialTheme {
+        Button(onClick = {
+            text = ""Hello, Desktop!""
+        }) {
+            Text(text)
+        }
+    }
+}
+
+fun main() = application {
+    Window(onCloseRequest = ::exitApplication) {
+        App()
+    }
+}
+","0","1653443748115","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","// Copyright 2000-2021 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file.
+import androidx.compose.desktop.ui.tooling.preview.Preview
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
+import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Edit
+import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.PlayArrow
+import androidx.compose.material.icons.filled.ThumbUp
+import androidx.compose.runtime.*
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.sp
+import androidx.compose.ui.window.Window
+import androidx.compose.ui.window.application
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
+
+@Composable
+fun StopWatchView(viewHelper: ViewHelper, coroutineScope: CoroutineScope) {
+
+    Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.Center) {
+        Text(""${viewHelper.numSecondsPassed}"", fontSize = 100.sp)
+    }
+    Row (modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceAround) {
+        IconButton(onClick = {
+            coroutineScope.launch {
+                viewHelper.start()
+            }
+        }) {
+            Icon(Icons.Default.PlayArrow, ""Play"")
+        }
+        IconButton(onClick = {
+            viewHelper.stop()
+        }) {
+            Icon(Icons.Filled.ThumbUp, ""Stahp"")
+        }
+        IconButton(onClick = {
+            viewHelper.reset()
+        }) {
+            Icon(Icons.Filled.Home, ""Reset"")
+        }
+    }
+}
+
+@Composable
+@Preview
+fun App() {
+    val viewHelpers = remember { mutableStateListOf<ViewHelper>()}
+    MaterialTheme {
+        val coroutineScope = rememberCoroutineScope()
+        Column {
+            Row {
+                IconButton(onClick = {
+                    viewHelpers.add(ViewHelper())
+                }) {
+                    Icon(Icons.Default.Edit, ""Create new stopwatch"")
+                }
+            }
+            LazyColumn {
+                items(viewHelpers) { viewHelper ->
+                    StopWatchView(viewHelper, coroutineScope)
+                }
+            }
+        }
+    }
+}
+
+fun main() = application {
+    Window(onCloseRequest = ::exitApplication) {
+        App()
+    }
+}
+
+","","0","1653443748115","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
+
+class ViewHelp$e:rObserver  {
+    vrl numSecondsPassedby= mutableStateOf()
+    val stopWatch = StopWatch()
+    init {
+        stopWatch.addObserver(this)
+    }
+    
+override fun notify(numSecondsPassed: Int) {
+
+        this.numSecondsPassed = numSecondsPassed
+    }
+
+    suspend fun start() {
+        stopWatch.start()   $ }
+
+    un stop() {}
+        stopWatch.stop()
+    
+ 
+    fun reset() {
+        stopWatch.reset()
+    }
+
+
+}","0","1653443748122","ViewHelper.kt","1.1.3 for 2021-2022 @t1",
+"e","import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
+
+class ViewHelper: Observer {
+    var numSecondsPassed by mutableStateOf(0)
+    val stopWatch = StopWatch()
+    init {
+        stopWatch.addObserver(this)
+    }
+
+    override fun notify(numSecondsPassed: Int) {
+
+        this.numSecondsPassed = numSecondsPassed
+    }
+
+    suspend fun start() {
+        stopWatch.start()
+    }
+
+    fun stop() {
+        stopWatch.stop()
+    }
+
+    fun reset() {
+        stopWatch.reset()
+    }
+
+
+}","","0","1653443748122","ViewHelper.kt","1.1.3 for 2021-2022 @t1",
+"e","r","","2545","1653443783525","Main.kt","1.1.3 for 2021-2022 @t1",
+"k","r",,"2546","1653443783532","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","$","","2546","1653443783561","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","$","2546","1653443783625","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","u","","2546","1653443783626","Main.kt","1.1.3 for 2021-2022 @t1",
+"k","u",,"2547","1653443783625","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","$","","2547","1653443783632","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","$","2547","1653443783766","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","n","","2547","1653443783767","Main.kt","1.1.3 for 2021-2022 @t1",
+"k","n",,"2548","1653443783766","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","$","","2548","1653443783772","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","$","2548","1653443784501","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","B","","2548","1653443784502","Main.kt","1.1.3 for 2021-2022 @t1",
+"k","B",,"2549","1653443784503","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","$","","2549","1653443784525","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","$","2549","1653443784613","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","l","","2549","1653443784614","Main.kt","1.1.3 for 2021-2022 @t1",
+"k","l",,"2550","1653443784614","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","$","","2550","1653443784629","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","$","2550","1653443784786","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","o","","2550","1653443784787","Main.kt","1.1.3 for 2021-2022 @t1",
+"k","o",,"2551","1653443784787","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","$","","2551","1653443784794","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","$","2551","1653443784849","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","c","","2551","1653443784850","Main.kt","1.1.3 for 2021-2022 @t1",
+"k","c",,"2552","1653443784850","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","$","","2552","1653443784857","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","$","2552","1653443784972","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","k","","2552","1653443784973","Main.kt","1.1.3 for 2021-2022 @t1",
+"k","k",,"2553","1653443784974","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","$","","2553","1653443784982","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","$","2553","1653443785140","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","i","","2553","1653443785141","Main.kt","1.1.3 for 2021-2022 @t1",
+"k","i",,"2554","1653443785142","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","$","","2554","1653443785148","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","$","2554","1653443785165","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","n","","2554","1653443785166","Main.kt","1.1.3 for 2021-2022 @t1",
+"k","n",,"2555","1653443785167","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","$","","2555","1653443785179","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","$","2555","1653443785304","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","g","","2555","1653443785305","Main.kt","1.1.3 for 2021-2022 @t1",
+"k","g",,"2556","1653443785306","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","$","","2556","1653443785314","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","$","2556","1653443785670","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","application","2556","1653443785675","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","_root_ide_package_.kotlinx.coroutines.","","2545","1653443785677","Main.kt","1.1.3 for 2021-2022 @t1",
+"e"," ","","2595","1653443785677","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","_root_ide_package_.kotlinx.coroutines.","2545","1653443785728","Main.kt","1.1.3 for 2021-2022 @t1",
+"e",""," ","2557","1653443785730","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","{","","2558","1653443788234","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","}","","2558","1653443788235","Main.kt","1.1.3 for 2021-2022 @t1",
+"k","{",,"2558","1653443788237","Main.kt","1.1.3 for 2021-2022 @t1",
+"k","}",,"2559","1653443788342","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","}","2558","1653443789751","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","}","","2630","1653443791205","Main.kt","1.1.3 for 2021-2022 @t1",
+"k","}",,"2631","1653443791206","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","a","","2558","1653443793508","Main.kt","1.1.3 for 2021-2022 @t1",
+"k","a",,"2559","1653443793509","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","$","","2559","1653443793516","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","$","2559","1653443793836","Main.kt","1.1.3 for 2021-2022 @t1",
+"e"," ","","2559","1653443793837","Main.kt","1.1.3 for 2021-2022 @t1",
+"k"," ",,"2560","1653443793838","Main.kt","1.1.3 for 2021-2022 @t1",
+"e",""," ","2559","1653443794111","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","a","2558","1653443794229","Main.kt","1.1.3 for 2021-2022 @t1",
+"e"," ","","2558","1653443794385","Main.kt","1.1.3 for 2021-2022 @t1",
+"k"," ",,"2559","1653443794385","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","a","","2559","1653443794506","Main.kt","1.1.3 for 2021-2022 @t1",
+"k","a",,"2560","1653443794506","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","$","","2560","1653443794520","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","$","2560","1653443794577","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","p","","2560","1653443794578","Main.kt","1.1.3 for 2021-2022 @t1",
+"k","p",,"2561","1653443794578","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","$","","2561","1653443794583","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","$","2561","1653443794700","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","p","","2561","1653443794701","Main.kt","1.1.3 for 2021-2022 @t1",
+"k","p",,"2562","1653443794702","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","$","","2562","1653443794710","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","$","2562","1653443794870","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","l","","2562","1653443794871","Main.kt","1.1.3 for 2021-2022 @t1",
+"k","l",,"2563","1653443794872","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","$","","2563","1653443794879","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","$","2563","1653443794942","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","i","","2563","1653443794943","Main.kt","1.1.3 for 2021-2022 @t1",
+"k","i",,"2564","1653443794944","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","$","","2564","1653443794951","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","$","2564","1653443795010","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","c","","2564","1653443795011","Main.kt","1.1.3 for 2021-2022 @t1",
+"k","c",,"2565","1653443795012","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","$","","2565","1653443795018","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","$","2565","1653443795132","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","a","","2565","1653443795133","Main.kt","1.1.3 for 2021-2022 @t1",
+"k","a",,"2566","1653443795134","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","$","","2566","1653443795147","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","$","2566","1653443795258","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","t","","2566","1653443795259","Main.kt","1.1.3 for 2021-2022 @t1",
+"k","t",,"2567","1653443795260","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","$","","2567","1653443795266","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","$","2567","1653443795315","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","i","","2567","1653443795316","Main.kt","1.1.3 for 2021-2022 @t1",
+"k","i",,"2568","1653443795317","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","$","","2568","1653443795328","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","$","2568","1653443795362","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","o","","2568","1653443795363","Main.kt","1.1.3 for 2021-2022 @t1",
+"k","o",,"2569","1653443795364","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","$","","2569","1653443795379","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","$","2569","1653443795398","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","n","","2569","1653443795399","Main.kt","1.1.3 for 2021-2022 @t1",
+"k","n",,"2570","1653443795399","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","$","","2570","1653443795412","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","$","2570","1653443795545","Main.kt","1.1.3 for 2021-2022 @t1",
+"e"," ","","2570","1653443795548","Main.kt","1.1.3 for 2021-2022 @t1",
+"k"," ",,"2571","1653443795549","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","
+","","2559","1653443797188","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","    ","","2560","1653443797191","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","
+","","2648","1653443798500","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","`","","2647","1653443798976","Main.kt","1.1.3 for 2021-2022 @t1",
+"k","`",,"2648","1653443798977","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","`","","2647","1653443799909","Main.kt","1.1.3 for 2021-2022 @t1",
+"k","`",,"2649","1653443799910","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","`","2647","1653443800648","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","`","2647","1653443800754","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","    ","","2647","1653443801303","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","    ","","2578","1653443804929","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","    ","","2639","1653443804929","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","    ","","2649","1653443804930","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","    
+","","2560","1653443807346","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","    
+","","2565","1653443809177","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","l","","2564","1653443810699","Main.kt","1.1.3 for 2021-2022 @t1",
+"k","l",,"2565","1653443810700","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","
+    l
+    
+    ","2559","1653443810707","Main.kt","1.1.3 for 2021-2022 @t1",
+"e",""," ","2570","1653443810707","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","$","","2570","1653443810708","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","    ","2573","1653443810709","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","    ","2622","1653443810707","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","    }
+    ","2640","1653443810707","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","}
+","","2640","1653443810708","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","
+    l$
+    
+    ","","2559","1653443810707","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","$","2587","1653443810707","Main.kt","1.1.3 for 2021-2022 @t1",
+"e"," ","","2587","1653443810708","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","    ","","2594","1653443810709","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","    ","","2643","1653443810707","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","}
+","2665","1653443810707","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","    }
+    ","","2665","1653443810708","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","$","2565","1653443810846","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","a","","2565","1653443810847","Main.kt","1.1.3 for 2021-2022 @t1",
+"k","a",,"2566","1653443810846","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","$","","2566","1653443810852","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","$","2566","1653443811398","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","unch","","2566","1653443811399","Main.kt","1.1.3 for 2021-2022 @t1",
+"e"," {  }","","2570","1653443811412","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","
+    ","","2573","1653443812059","Main.kt","1.1.3 for 2021-2022 @t1",
+"e",""," ","2578","1653443812061","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","    
+","","2574","1653443812062","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","    ","","2578","1653443812062","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","    ","2589","1653444701776","Main.kt","1.1.3 for 2021-2022 @t1",
+"e","","        ","2574","1653444701777","Main.kt","1.1.3 for 2021-2022 @t1",
+"e",""," ","2572","1653444701778","Main.kt","1.1.3 for 2021-2022 @t1",
+"e",""," ","2558","1653444701778","Main.kt","1.1.3 for 2021-2022 @t1",

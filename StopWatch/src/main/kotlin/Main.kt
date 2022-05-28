@@ -71,9 +71,15 @@ fun App() {
     }
 }
 
-fun main() = application {
-    Window(onCloseRequest = ::exitApplication) {
-        App()
+fun main() = runBlocking {
+    launch {
+
+    }
+
+    application {
+        Window(onCloseRequest = ::exitApplication) {
+            App()
+        }
     }
 }
 
