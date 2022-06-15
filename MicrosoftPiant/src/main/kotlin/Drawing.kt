@@ -7,7 +7,7 @@ class Drawing {
         shapes.add(shape)
     }
 
-    companion object {
-        fun someStaticMethod() {}
+    fun removeShape(shape: Shape) {
+        shapes.remove(shape)
     }
 }

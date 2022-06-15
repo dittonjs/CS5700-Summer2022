@@ -32,14 +32,19 @@ fun App() {
         Column {
             Row {
                 Button(onClick = {
-                    viewHelper.setCommand(DrawCircleCommand())
+                    viewHelper.setCommand(DrawCircleCommand(drawing))
                 }) {
                     Text("Circle")
                 }
                 Button(onClick = {
-                    viewHelper.setCommand(DrawRectCommand())
+                    viewHelper.setCommand(DrawRectCommand(drawing))
                 }) {
                     Text("Rect")
+                }
+                Button(onClick = {
+                    viewHelper.undo()
+                }) {
+                    Text("Undo")
                 }
             }
             Row {

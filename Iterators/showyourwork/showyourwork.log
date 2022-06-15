@@ -1,0 +1,746 @@
+"a","Outside edit","","","1654820033734",".gitignore","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033734",".gitignore","1.1.3 for 2021-2022 @t1",
+"e","","No Phanon history found: /Users/josephditton/school/summer2022/5700/Iterators/showyourwork/showyourwork.log Player unable to render
+","0","1654820033734",".gitignore","1.1.3 for 2021-2022 @t1",
+"e","","","0","1654820033734",".gitignore","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033734","Main.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033735","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"e","","No Phanon history found: /Users/josephditton/school/summer2022/5700/Iterators/showyourwork/showyourwork.log Player unable to render
+","0","1654820033735","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"e","import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
+plugins {
+    kotlin(""jvm"") version ""1.5.10""
+    application
+}
+
+group = ""me.josephditton""
+version = ""1.0-SNAPSHOT""
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation(kotlin(""test""))
+}
+
+tasks.test {
+    useJUnitPlatform()
+}
+
+tasks.withType<KotlinCompile> {
+    kotlinOptions.jvmTarget = ""1.8""
+}
+
+application {
+    mainClass.set(""MainKt"")
+}","","0","1654820033735","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033735","TrackingSimulator.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033735","TrackingSimulator.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033735","ShippingUpdateTranslator.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033735","ShippingUpdateTranslator.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033735","TrackingSimulator.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033735","ShippingUpdateTranslator.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033736","UpdateType.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033736","NoteAddedUpdate.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033736","NoteAddedUpdate.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033736","StatusUpdate.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033736","ShipmentEnded.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033736","ShipmentDeliveryDateUpdates.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033736","ShipmentDeliveryDateAdjustment.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033737","ShipmentCreated.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033737","LocationUpdate.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033737","LocationUpdate.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033737","StatusUpdate.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033737","ShipmentCreated.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033737","ShipmentEnded.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033737","ShipmentDeliveryDateAdjustment.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033737","ShippingUpdate.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033738","ShippingUpdate.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033738","ShippingUpdate.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033738","Shipment.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033738","Shipment.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033738","UpdateTypeLogicalSwitchboard.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033738","UpdateTypeLogicalSwitchboard.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033738","UpdateTypeLogicalSwitchboard.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033739","UpdateTypeLogicalSwitchboard.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033739","ShipmentEnded.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033739","Shipment.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033739","ShippingUpdateTranslator.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033739","TrackingSimulator.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033739","NoteAddedUpdate.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033739","ShipmentDeliveryDateAdjustment.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033740","ShippingUpdate.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033740","StatusUpdate.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033740","LocationUpdate.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033740","ShipmentCreated.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033740","UpdateType.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033740","TrackerViewHelper.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033740","TrackerViewHelper.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033740","TrackingSimulatorTest.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033740","ShipmentTest.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033741","TrackerViewHelperTest.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033741","Ellipse.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033741","TwoDShape.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033741","Shape.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033741","Rectangle.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033741","Circle.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033741","Triangle.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033741","RectangleTest.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033742","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"e","","No Phanon history found: /Users/josephditton/school/summer2022/5700/Iterators/showyourwork/showyourwork.log Player unable to render
+","0","1654820033742","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"e","import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
+plugins {
+    kotlin(""jvm"") version ""1.5.10""
+    application
+}
+
+group = ""me.josephditton""
+version = ""1.0-SNAPSHOT""
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation(kotlin(""test""))
+}
+
+tasks.test {
+    useJUnitPlatform()
+}
+
+tasks.withType<KotlinCompile> {
+    kotlinOptions.jvmTarget = ""1.8""
+}
+
+application {
+    mainClass.set(""MainKt"")
+}","","0","1654820033742","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033742","RectangleTest.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033742","PointTest.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033742","PointTest.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033742","MyClass.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033742","Point.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033742","TriangleTest.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033742","schedule.txt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033743","Dog.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033743","Main.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033743","Animal.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033743","Animal.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033743","Dog.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033743","MainKtTest.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033743","MainKtTest.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033743","Tollbooth.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033744","Car.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033744","Lane.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033744","LaneTest.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033744","LaneTest.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033744","StateFactory.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033744","Parser.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033744","State.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033745","InvalidState.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033745","TuringMachine.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033745","ProgramState.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033745","AbortState.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033745","ProgramStateTest.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033745","ProgramStateTest.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033745","MainViewModel.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033745","Main.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033746","Controls.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033746","IDE.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033746","Tape.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033746","IDEViewModel.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033746","TuringMachineTest.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033746",".gitignore","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033746","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"e","","No Phanon history found: /Users/josephditton/school/summer2022/5700/Iterators/showyourwork/showyourwork.log Player unable to render
+","0","1654820033746","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"e","import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
+plugins {
+    kotlin(""jvm"") version ""1.5.10""
+    application
+}
+
+group = ""me.josephditton""
+version = ""1.0-SNAPSHOT""
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation(kotlin(""test""))
+}
+
+tasks.test {
+    useJUnitPlatform()
+}
+
+tasks.withType<KotlinCompile> {
+    kotlinOptions.jvmTarget = ""1.8""
+}
+
+application {
+    mainClass.set(""MainKt"")
+}","","0","1654820033746","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033746",".gitignore","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033747","Shipment.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033747","Simulator.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033747","Update.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033747","TrackerViewHelper.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033747","Observable.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033747","Observer.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033747","UpdateStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033747","ShipmentCreatedStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033748","ShipmentDeliveredStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033748","ShipmentLostStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033748","ShipmentLocationUpdateStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033748","ShipmentDelayedStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033748","ShipmentCancelledStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033748","ShipmentNoteAddedStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033748","TrackingSimulator.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033749","ShipmentShippedStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033749","ShipmentUpdateStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033749","ShipmentObserver.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033749","TrackerView.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033751","Ellipse.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033751","TwoDShape.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033751","Shape.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033751","Rectangle.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033751","Circle.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033751","Triangle.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033751","RectangleTest.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033751","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"e","","No Phanon history found: /Users/josephditton/school/summer2022/5700/Iterators/showyourwork/showyourwork.log Player unable to render
+","0","1654820033751","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"e","import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
+plugins {
+    kotlin(""jvm"") version ""1.5.10""
+    application
+}
+
+group = ""me.josephditton""
+version = ""1.0-SNAPSHOT""
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation(kotlin(""test""))
+}
+
+tasks.test {
+    useJUnitPlatform()
+}
+
+tasks.withType<KotlinCompile> {
+    kotlinOptions.jvmTarget = ""1.8""
+}
+
+application {
+    mainClass.set(""MainKt"")
+}","","0","1654820033751","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033752","RectangleTest.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033752","PointTest.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033752","PointTest.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033752","MyClass.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033752","Point.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033752","TriangleTest.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033752","schedule.txt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033753","CompositeShape.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033753","Ellipse.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033753","TwoDShape.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033753","Shape.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033753","Rectangle.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033753","Circle.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033753","Triangle.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033753","RectangleTest.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033753","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"e","","No Phanon history found: /Users/josephditton/school/summer2022/5700/Iterators/showyourwork/showyourwork.log Player unable to render
+","0","1654820033753","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"e","import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
+plugins {
+    kotlin(""jvm"") version ""1.5.10""
+    application
+}
+
+group = ""me.josephditton""
+version = ""1.0-SNAPSHOT""
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation(kotlin(""test""))
+}
+
+tasks.test {
+    useJUnitPlatform()
+}
+
+tasks.withType<KotlinCompile> {
+    kotlinOptions.jvmTarget = ""1.8""
+}
+
+application {
+    mainClass.set(""MainKt"")
+}","","0","1654820033754","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033754","RectangleTest.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033754","PointTest.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033754","PointTest.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033754","MyClass.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033754","Point.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033754","TriangleTest.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033754","schedule.txt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033754","Dog.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033755","Main.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033755","Animal.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033755","Animal.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033755","Dog.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033755","MainKtTest.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033755","MainKtTest.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033755","Tollbooth.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033756","Car.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033756","Lane.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033756","LaneTest.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033756","LaneTest.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033756","StateFactory.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033756","Parser.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033756","State.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033756","InvalidState.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033756","TuringMachine.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033757","ProgramState.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033757","AbortState.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033757","ProgramStateTest.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033757","ProgramStateTest.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033757","MainViewModel.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033757","Main.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033757","Controls.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033758","IDE.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033758","Tape.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033758","IDEViewModel.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033758","TuringMachineTest.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033758",".gitignore","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033758","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"e","","No Phanon history found: /Users/josephditton/school/summer2022/5700/Iterators/showyourwork/showyourwork.log Player unable to render
+","0","1654820033758","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"e","import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
+plugins {
+    kotlin(""jvm"") version ""1.5.10""
+    application
+}
+
+group = ""me.josephditton""
+version = ""1.0-SNAPSHOT""
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation(kotlin(""test""))
+}
+
+tasks.test {
+    useJUnitPlatform()
+}
+
+tasks.withType<KotlinCompile> {
+    kotlinOptions.jvmTarget = ""1.8""
+}
+
+application {
+    mainClass.set(""MainKt"")
+}","","0","1654820033758","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033758",".gitignore","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033759","Shipment.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033759","Simulator.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033759","Update.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033759","TrackerViewHelper.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033759","Observable.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033759","Observer.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033759","UpdateStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033759","ShipmentCreatedStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033760","ShipmentDeliveredStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033760","ShipmentLostStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033760","ShipmentLocationUpdateStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033760","ShipmentDelayedStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033760","ShipmentCancelledStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033760","ShipmentNoteAddedStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033760","TrackingSimulator.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033760","ShipmentShippedStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033761","ShipmentUpdateStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033761","ShipmentObserver.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033761","TrackerView.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033761","Ellipse.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033761","TwoDShape.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033761","Shape.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033761","Rectangle.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033761","Circle.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033761","Triangle.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033762","RectangleTest.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033762","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"e","","No Phanon history found: /Users/josephditton/school/summer2022/5700/Iterators/showyourwork/showyourwork.log Player unable to render
+","0","1654820033762","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"e","import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
+plugins {
+    kotlin(""jvm"") version ""1.5.10""
+    application
+}
+
+group = ""me.josephditton""
+version = ""1.0-SNAPSHOT""
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation(kotlin(""test""))
+}
+
+tasks.test {
+    useJUnitPlatform()
+}
+
+tasks.withType<KotlinCompile> {
+    kotlinOptions.jvmTarget = ""1.8""
+}
+
+application {
+    mainClass.set(""MainKt"")
+}","","0","1654820033762","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033762","RectangleTest.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033762","PointTest.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033762","PointTest.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033762","MyClass.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033762","Point.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033762","TriangleTest.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033762","schedule.txt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033762","Dog.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033763","Main.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033763","Animal.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033763","Animal.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033763","Dog.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033763","MainKtTest.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033763","MainKtTest.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033763","Tollbooth.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033763","Car.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033764","Lane.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033764","LaneTest.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033764","LaneTest.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033764","StateFactory.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033764","Parser.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033764","State.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033764","InvalidState.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033764","TuringMachine.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033764","ProgramState.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033765","AbortState.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033765","ProgramStateTest.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033765","ProgramStateTest.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033765","MainViewModel.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033765","Main.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033765","Controls.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033765","IDE.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033765","Tape.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033765","IDEViewModel.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033766","TuringMachineTest.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033766",".gitignore","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033766","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"e","","No Phanon history found: /Users/josephditton/school/summer2022/5700/Iterators/showyourwork/showyourwork.log Player unable to render
+","0","1654820033766","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"e","import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
+plugins {
+    kotlin(""jvm"") version ""1.5.10""
+    application
+}
+
+group = ""me.josephditton""
+version = ""1.0-SNAPSHOT""
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation(kotlin(""test""))
+}
+
+tasks.test {
+    useJUnitPlatform()
+}
+
+tasks.withType<KotlinCompile> {
+    kotlinOptions.jvmTarget = ""1.8""
+}
+
+application {
+    mainClass.set(""MainKt"")
+}","","0","1654820033766","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033766",".gitignore","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033766","Shipment.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033766","Simulator.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033766","Update.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033766","TrackerViewHelper.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033766","Observable.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033767","Observer.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033767","UpdateStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033767","ShipmentCreatedStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033767","ShipmentDeliveredStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033767","ShipmentLostStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033767","ShipmentLocationUpdateStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033767","ShipmentDelayedStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033768","ShipmentCancelledStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033768","ShipmentNoteAddedStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033768","TrackingSimulator.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033768","ShipmentShippedStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033768","ShipmentUpdateStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033768","ShipmentObserver.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033768","TrackerView.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033768","StateFactory.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033768","Parser.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033769","State.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033769","InvalidState.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033769","TuringMachine.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033769","ProgramState.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033769","AbortState.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033769","ProgramStateTest.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033769","ProgramStateTest.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033769","MainViewModel.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033770","Main.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033770","Controls.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033770","IDE.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033770","Tape.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033770","IDEViewModel.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033770","TuringMachineTest.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033770",".gitignore","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033770","TrackerView.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033770","TrackerViewHelper.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033771","Main.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033771","Shipment.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033771","TrackingSimulator.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033771","ShipmentUpdateStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033771","ShipmentDeliveredStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033771",".gitignore","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033771",".gitignore","1.1.3 for 2021-2022 @t1",
+"e","","No Phanon history found: /Users/josephditton/school/summer2022/5700/Iterators/showyourwork/showyourwork.log Player unable to render
+","0","1654820033772",".gitignore","1.1.3 for 2021-2022 @t1",
+"e","","","0","1654820033772",".gitignore","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033772","Main.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033772","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"e","","No Phanon history found: /Users/josephditton/school/summer2022/5700/Iterators/showyourwork/showyourwork.log Player unable to render
+","0","1654820033772","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"e","import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
+plugins {
+    kotlin(""jvm"") version ""1.5.10""
+    application
+}
+
+group = ""me.josephditton""
+version = ""1.0-SNAPSHOT""
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation(kotlin(""test""))
+}
+
+tasks.test {
+    useJUnitPlatform()
+}
+
+tasks.withType<KotlinCompile> {
+    kotlinOptions.jvmTarget = ""1.8""
+}
+
+application {
+    mainClass.set(""MainKt"")
+}","","0","1654820033772","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033772","TrackingSimulator.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033772","TrackingSimulator.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033772","ShippingUpdateTranslator.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033772","ShippingUpdateTranslator.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033772","TrackingSimulator.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033772","ShippingUpdateTranslator.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033772","UpdateType.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033773","NoteAddedUpdate.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033773","NoteAddedUpdate.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033773","StatusUpdate.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033773","ShipmentEnded.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033773","ShipmentDeliveryDateUpdates.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033773","ShipmentDeliveryDateAdjustment.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033773","ShipmentCreated.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033773","LocationUpdate.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033773","LocationUpdate.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033774","StatusUpdate.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033774","ShipmentCreated.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033774","ShipmentEnded.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033774","ShipmentDeliveryDateAdjustment.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033774","ShippingUpdate.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033774","ShippingUpdate.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033774","ShippingUpdate.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033774","Shipment.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033774","Shipment.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033775","UpdateTypeLogicalSwitchboard.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033775","UpdateTypeLogicalSwitchboard.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033775","UpdateTypeLogicalSwitchboard.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033775","UpdateTypeLogicalSwitchboard.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033775","ShipmentEnded.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033775","Shipment.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033775","ShippingUpdateTranslator.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033775","TrackingSimulator.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033776","NoteAddedUpdate.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033776","ShipmentDeliveryDateAdjustment.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033776","ShippingUpdate.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033776","StatusUpdate.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033776","LocationUpdate.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033776","ShipmentCreated.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033776","UpdateType.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033776","TrackerViewHelper.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033776","TrackerViewHelper.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033777","TrackingSimulatorTest.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033777","ShipmentTest.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033777","TrackerViewHelperTest.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033777","Ellipse.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033777","TwoDShape.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033777","Shape.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033777","Rectangle.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033777","Circle.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033778","Triangle.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033778","RectangleTest.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033778","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"e","","No Phanon history found: /Users/josephditton/school/summer2022/5700/Iterators/showyourwork/showyourwork.log Player unable to render
+","0","1654820033778","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"e","import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
+plugins {
+    kotlin(""jvm"") version ""1.5.10""
+    application
+}
+
+group = ""me.josephditton""
+version = ""1.0-SNAPSHOT""
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation(kotlin(""test""))
+}
+
+tasks.test {
+    useJUnitPlatform()
+}
+
+tasks.withType<KotlinCompile> {
+    kotlinOptions.jvmTarget = ""1.8""
+}
+
+application {
+    mainClass.set(""MainKt"")
+}","","0","1654820033778","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033778","RectangleTest.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033778","PointTest.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033778","PointTest.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033778","MyClass.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033778","Point.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033778","TriangleTest.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033779","schedule.txt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033779","Dog.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033779","Main.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033779","Animal.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033779","Animal.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033779","Dog.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033779","MainKtTest.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033779","MainKtTest.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033779","Tollbooth.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033780","Car.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033780","Lane.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033780","LaneTest.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033780","LaneTest.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033780","StateFactory.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033780","Parser.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033780","State.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033780","InvalidState.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033781","TuringMachine.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033781","ProgramState.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033781","AbortState.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033781","ProgramStateTest.java","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033781","ProgramStateTest.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033781","MainViewModel.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033781","Main.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033781","Controls.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033781","IDE.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033782","Tape.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033782","IDEViewModel.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033782","TuringMachineTest.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033782",".gitignore","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033782","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"e","","No Phanon history found: /Users/josephditton/school/summer2022/5700/Iterators/showyourwork/showyourwork.log Player unable to render
+","0","1654820033782","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"e","import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
+plugins {
+    kotlin(""jvm"") version ""1.5.10""
+    application
+}
+
+group = ""me.josephditton""
+version = ""1.0-SNAPSHOT""
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation(kotlin(""test""))
+}
+
+tasks.test {
+    useJUnitPlatform()
+}
+
+tasks.withType<KotlinCompile> {
+    kotlinOptions.jvmTarget = ""1.8""
+}
+
+application {
+    mainClass.set(""MainKt"")
+}","","0","1654820033782","build.gradle.kts","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033782",".gitignore","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033782","Shipment.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033782","Simulator.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033782","Update.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033783","TrackerViewHelper.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033783","Observable.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033783","Observer.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033783","UpdateStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033783","ShipmentCreatedStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033783","ShipmentDeliveredStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033783","ShipmentLostStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033784","ShipmentLocationUpdateStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033784","ShipmentDelayedStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033784","ShipmentCancelledStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033784","ShipmentNoteAddedStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033784","TrackingSimulator.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033784","ShipmentShippedStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033784","ShipmentUpdateStrategy.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033784","ShipmentObserver.kt","1.1.3 for 2021-2022 @t1",
+"a","Outside edit","","","1654820033785","TrackerView.kt","1.1.3 for 2021-2022 @t1",
+"a","ShowYourWork Init","","","000","ShowYourWork Init","1.1.3 for 2021-2022 @t1",

@@ -1,0 +1,1 @@
+data class ExtrinsicState(val color: String)
